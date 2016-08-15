@@ -11,7 +11,8 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, Big, Bad World!");
-
+            String prompt = "I'll repeat what you say.";
+            Console.WriteLine(prompt);
             String user = Console.ReadLine();
 
             Console.WriteLine(user + ", you say!");
