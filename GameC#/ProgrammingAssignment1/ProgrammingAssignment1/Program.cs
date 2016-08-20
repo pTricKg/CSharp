@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +10,16 @@ namespace ProgrammingAssignment1
     {
         static void Main(string[] args)
         {
+            // print to consolel
             Console.WriteLine("Welcome! This Application will calculate the distance between two points.");
 
+            // get user input 
             String myString = Console.ReadLine();
 
+            // print user input to console
             Console.WriteLine(myString);
 
+            // keeps console open for user input to cancel
             Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
         }
