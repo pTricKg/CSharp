@@ -4,3 +4,9 @@ c:\users\ptrickg\documents\visual studio 2015\Projects\GameC#\ProgrammingAssignm
 c:\users\ptrickg\documents\visual studio 2015\Projects\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.csprojResolveAssemblyReference.cache
 c:\users\ptrickg\documents\visual studio 2015\Projects\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.exe
 c:\users\ptrickg\documents\visual studio 2015\Projects\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.pdb
+C:\Users\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\bin\Debug\ProgrammingAssignment1.exe.config
+C:\Users\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.exe
+C:\Users\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.pdb
+C:\Users\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.csprojResolveAssemblyReference.cache
+C:\Users\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\bin\Debug\ProgrammingAssignment1.exe
+C:\Users\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\bin\Debug\ProgrammingAssignment1.pdb

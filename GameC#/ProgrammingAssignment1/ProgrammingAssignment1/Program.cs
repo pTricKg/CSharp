@@ -12,6 +12,10 @@ namespace ProgrammingAssignment1
         {
             Console.WriteLine("Welcome! This Application will calculate the distance between two points.");
 
+            String myString = Console.ReadLine();
+
+            Console.WriteLine(myString);
+
             Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
         }
