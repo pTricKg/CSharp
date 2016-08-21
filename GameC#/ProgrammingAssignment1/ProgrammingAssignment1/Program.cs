@@ -15,7 +15,7 @@ namespace ProgrammingAssignment1
         /// <summary>
         /// from user input, calculates distance and angle between two points.
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">command line</param>
         /// <returns>distance and angle</returns>
         static void Main(string[] args)
         {
@@ -30,7 +30,7 @@ namespace ProgrammingAssignment1
 
             // print input
             Console.WriteLine("You input " + point1X + " as X1.");
-            Console.WriteLine("You input " + point2X + " as X2.");
+            Console.WriteLine("You input " + point2X + " as X2.\n");
 
             Console.WriteLine("Please input 2 y coordinates, press enter after each: ");
             float point1Y = float.Parse(Console.ReadLine());
@@ -38,32 +38,32 @@ namespace ProgrammingAssignment1
 
             // print input
             Console.WriteLine("You input " + point1Y + " as Y1.");
-            Console.WriteLine("You input " + point2Y + " as Y2.");
+            Console.WriteLine("You input " + point2Y + " as Y2.\n");
 
             // calcualte delta x and delta y
             float deltaX = point2X - point1X;
             Console.WriteLine("Delta X is " + deltaX);
 
             float deltaY = point2Y - point1Y;
-            Console.WriteLine("Delta Y is " + deltaY);
+            Console.WriteLine("Delta Y is " + deltaY + "\n");
 
             // calculate distance between two points(Pythagorean Theorem)
             // a * a + b * b = c * c
             float dist = deltaX * deltaX + deltaY * deltaY;
             double distFin = Math.Sqrt(dist);
-            Console.WriteLine(distFin.ToString("F3") + " is distance.");
+            Console.WriteLine(distFin.ToString("F3") + " is the distance between given coordinates.\n");
 
             // calculate angle to go from point 1 to point 2(Atan2 math class)
             // convert from radians to degrees
             double radians = Math.Atan2(deltaY, deltaX);
-            Console.WriteLine(radians.ToString("F3") + " is radians.");
+            Console.WriteLine(radians.ToString("F3") + " is radians.\n");
 
             // convert radians to degrees
             double angle = radians * (180 / Math.PI);
             
             // print output to 3 decimal places for distance
             // print output of angle
-            Console.WriteLine(angle + " degree angle.");
+            Console.WriteLine("Making a " + angle + " degree angle.");
             
             // keep window
             Console.WriteLine("\nPress any key to exit.");
