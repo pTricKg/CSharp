@@ -23,47 +23,47 @@ namespace ProgrammingAssignment1
             Console.WriteLine("Welcome! This Application will calculate the distance between two points and the angle between those points.\n");
 
             // get user input and store
-            Console.WriteLine("Please input 2 x coordinate, press enter after each: ");
+            Console.WriteLine("Please input 2 X coordinate, press enter after each: ");
 
             float point1X = float.Parse(Console.ReadLine());
             float point2X = float.Parse(Console.ReadLine());
 
             // print input
-            Console.WriteLine("You input " + point1X + " as X1.");
-            Console.WriteLine("You input " + point2X + " as X2.\n");
+            //Console.WriteLine("You input " + point1X + " as X1.");
+            //Console.WriteLine("You input " + point2X + " as X2.\n");
 
-            Console.WriteLine("Please input 2 y coordinates, press enter after each: ");
+            Console.WriteLine("Please input 2 Y coordinates, press enter after each: ");
             float point1Y = float.Parse(Console.ReadLine());
             float point2Y = float.Parse(Console.ReadLine());
 
             // print input
-            Console.WriteLine("You input " + point1Y + " as Y1.");
-            Console.WriteLine("You input " + point2Y + " as Y2.\n");
+            //Console.WriteLine("You input " + point1Y + " as Y1.");
+            //Console.WriteLine("You input " + point2Y + " as Y2.\n");
 
             // calcualte delta x and delta y
             float deltaX = point2X - point1X;
-            Console.WriteLine("Delta X is " + deltaX);
+            //Console.WriteLine("Delta X is " + deltaX);
 
             float deltaY = point2Y - point1Y;
-            Console.WriteLine("Delta Y is " + deltaY + "\n");
+            //Console.WriteLine("Delta Y is " + deltaY + "\n");
 
             // calculate distance between two points(Pythagorean Theorem)
             // a * a + b * b = c * c
             float dist = deltaX * deltaX + deltaY * deltaY;
             double distFin = Math.Sqrt(dist);
-            Console.WriteLine(distFin.ToString("F3") + " is the distance between given coordinates.\n");
+            Console.WriteLine("\nDistance between points: " + distFin.ToString("F3"));
 
             // calculate angle to go from point 1 to point 2(Atan2 math class)
             // convert from radians to degrees
             double radians = Math.Atan2(deltaY, deltaX);
-            Console.WriteLine(radians.ToString("F3") + " is radians.\n");
+            //Console.WriteLine(radians.ToString("F3") + " is radians.\n");
 
             // convert radians to degrees
             double angle = radians * (180 / Math.PI);
             
             // print output to 3 decimal places for distance
             // print output of angle
-            Console.WriteLine("Making a " + angle + " degree angle.");
+            Console.WriteLine("Angle between points: " + angle.ToString("F3"));
             
             // keep window
             Console.WriteLine("\nPress any key to exit.");
