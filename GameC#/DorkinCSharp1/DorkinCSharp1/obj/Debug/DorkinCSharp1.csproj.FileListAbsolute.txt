@@ -1,0 +1,3 @@
+D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\bin\Debug\ProgrammingAssignment1.exe.config
+D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\ProgrammingAssignment1.exe
+D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\ProgrammingAssignment1.pdb

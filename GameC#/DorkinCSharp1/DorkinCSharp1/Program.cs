@@ -10,10 +10,7 @@ namespace ProgrammingAssignment1
     {
         static void Main(string[] args)
         {
-            // print to console
-            Console.WriteLine("Welcome! This Application will calculate the distance between two points.\n");
-
-            // get user input and store
+            
             Console.WriteLine("Your input will print next.\n");
             String myString = Console.ReadLine();
 
