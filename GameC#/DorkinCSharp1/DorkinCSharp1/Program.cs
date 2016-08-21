@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammingAssignment1
+namespace DorkinCSharp1
 {
     class Program
     {
