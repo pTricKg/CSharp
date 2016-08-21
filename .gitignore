@@ -1,5 +1,12 @@
 .gitignore
 .gitattributes
+.vs
+/bin
+/obj
+/Properties
+*.csproj
+*.sln
+App.config
 
 # Windows image file caches
 Thumbs.db
