@@ -23,17 +23,20 @@ namespace ProgrammingAssignment1
             Console.WriteLine("Welcome! This Application will calculate the distance between two points and the angle between those points.\n");
 
             // get user input and store
-            Console.WriteLine("Please input 2 X coordinate, press enter after each: ");
-
+            Console.WriteLine("Please input X1 coordinate: ");
             float point1X = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please input X2 coordinate: ");
             float point2X = float.Parse(Console.ReadLine());
 
             // print input
             //Console.WriteLine("You input " + point1X + " as X1.");
             //Console.WriteLine("You input " + point2X + " as X2.\n");
 
-            Console.WriteLine("Please input 2 Y coordinates, press enter after each: ");
+            Console.WriteLine("Please input Y1 coordinate: ");
             float point1Y = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please input Y2 coordinate: ");
             float point2Y = float.Parse(Console.ReadLine());
 
             // print input
@@ -63,7 +66,7 @@ namespace ProgrammingAssignment1
             
             // print output to 3 decimal places for distance
             // print output of angle
-            Console.WriteLine("Angle between points: " + angle.ToString("F3"));
+            Console.WriteLine("\nAngle between points: " + angle.ToString("F3"));
             
             // keep window
             Console.WriteLine("\nPress any key to exit.");
