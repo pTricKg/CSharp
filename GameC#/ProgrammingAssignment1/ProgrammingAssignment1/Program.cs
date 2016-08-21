@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProgrammingAssignment1
 {
+    /// <summary>
+    /// Calculate the distance between two point,
+    /// then calculate angle between them.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// from user input, calculates distance and angle between two points.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns>distance and angle</returns>
         static void Main(string[] args)
         {
             // print to console
