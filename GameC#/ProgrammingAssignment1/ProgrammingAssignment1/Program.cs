@@ -19,6 +19,17 @@ namespace ProgrammingAssignment1
             // print user input to console
             Console.WriteLine(myString);
 
+            // calculate minutes and seconds 
+            int minutes = 60;
+            int hours = 24;
+            int seconds = 60;
+
+            int minutesInDay = hours * minutes;
+            int secondsInDay = minutesInDay * seconds;
+
+            Console.WriteLine("Minutes in day: " + minutesInDay);
+            Console.WriteLine("Seconds in day: " + secondsInDay);
+
             // keeps console open for user input to cancel
             Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
