@@ -32,15 +32,30 @@ namespace ProgrammingAssignment1
             Console.WriteLine("You input " + point2Y + " as Y2.");
 
             // calcualte delta x and delta y
+            float deltaX = point2X - point1X;
+            Console.WriteLine("Delta X is " + deltaX);
+
+            float deltaY = point2Y - point1Y;
+            Console.WriteLine("Delta Y is " + deltaY);
 
             // calculate distance between two points(Pythagorean Theorem)
+            // a * a + b * b = c * c
+            float dist = deltaX * deltaX + deltaY * deltaY;
+            double distFin = Math.Sqrt(dist);
+            Console.WriteLine(distFin.ToString("F3") + " is distance.");
 
             // calculate angle to go from point 1 to point 2(Atan2 math class)
             // convert from radians to degrees
+            double radians = Math.Atan2(deltaY, deltaX);
+            Console.WriteLine(radians.ToString("F3") + " is radians.");
 
+            // convert radians to degrees
+            double angle = radians * (180 / Math.PI);
+            
             // print output to 3 decimal places for distance
             // print output of angle
-
+            Console.WriteLine(angle + " degree angle.");
+            
             // keep window
             Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
