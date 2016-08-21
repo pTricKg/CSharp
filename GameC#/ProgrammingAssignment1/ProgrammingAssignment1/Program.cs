@@ -11,13 +11,14 @@ namespace ProgrammingAssignment1
         static void Main(string[] args)
         {
             // print to console
-            Console.WriteLine("Welcome! This Application will calculate the distance between two points.");
+            Console.WriteLine("Welcome! This Application will calculate the distance between two points.\n");
 
             // get user input and store
+            Console.WriteLine("Your input will print next.\n");
             String myString = Console.ReadLine();
 
             // print user input to console
-            Console.WriteLine(myString);
+            Console.WriteLine(myString + "\n");
 
             // calculate minutes and seconds 
             int minutes = 60;
@@ -28,7 +29,23 @@ namespace ProgrammingAssignment1
             int secondsInDay = minutesInDay * seconds;
 
             Console.WriteLine("Minutes in day: " + minutesInDay);
-            Console.WriteLine("Seconds in day: " + secondsInDay);
+            Console.WriteLine("\nSeconds in day: " + secondsInDay);
+
+            // get input from user
+            Console.WriteLine("\nHow many days do you want to calculate seconds for?\n");
+            String myNum = Console.ReadLine();
+
+            // convert input string to int
+            int num = Int32.Parse(myNum);
+            // calc seconds from user input
+            int userSecondsInDay = num * secondsInDay;
+            // print user input
+            Console.WriteLine(myNum + " is your input.\n");
+            Console.WriteLine("There are " + userSecondsInDay + " seconds in " + myNum + " days.\n");
+
+            // calc minutes from user input
+            int userMinutesInDay = num * minutesInDay;
+            Console.WriteLine("There are " + userMinutesInDay + " minutes in " + myNum + " days.\n");
 
             // keeps console open for user input to cancel
             Console.WriteLine("\nPress any key to exit.");
