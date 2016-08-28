@@ -23,3 +23,5 @@ d:\ptrickg\documents\visual studio 2015\Projects\MonoGame1\MonoGame1\bin\Windows
 d:\ptrickg\documents\visual studio 2015\Projects\MonoGame1\MonoGame1\obj\x86\Debug\MonoGame1.csprojResolveAssemblyReference.cache
 d:\ptrickg\documents\visual studio 2015\Projects\MonoGame1\MonoGame1\obj\x86\Debug\MonoGame1.exe
 d:\ptrickg\documents\visual studio 2015\Projects\MonoGame1\MonoGame1\obj\x86\Debug\MonoGame1.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\MonoGame1\MonoGame1\obj\x86\Debug\MonoGame1.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\MonoGame1\MonoGame1\obj\x86\Debug\MonoGame1.pdb
