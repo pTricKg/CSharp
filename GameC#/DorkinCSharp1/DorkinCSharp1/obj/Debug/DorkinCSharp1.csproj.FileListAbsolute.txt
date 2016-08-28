@@ -4,3 +4,9 @@ D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\Programm
 D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\bin\Debug\ProgrammingAssignment1.exe
 D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\bin\Debug\ProgrammingAssignment1.pdb
 D:\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\DorkinCSharp1.csprojResolveAssemblyReference.cache
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\bin\Debug\ProgrammingAssignment1.exe.config
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\ProgrammingAssignment1.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\ProgrammingAssignment1.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\bin\Debug\ProgrammingAssignment1.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\bin\Debug\ProgrammingAssignment1.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\DorkinCSharp1\DorkinCSharp1\obj\Debug\DorkinCSharp1.csprojResolveAssemblyReference.cache
