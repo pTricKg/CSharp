@@ -78,8 +78,8 @@ namespace ProgrammingAssignment2
             //droid1 = Content.Load<Texture2D>(@"graphics\andriod1");
             //drawRectangle1 = new Rectangle(300, 200, droid1.Width, droid1.Height);
 
-            //droid2 = Content.Load<Texture2D>(@"graphics\android2");
-            //drawRectangle2 = new Rectangle(400, 300, droid2.Width, droid2.Height);
+            droid2 = Content.Load<Texture2D>(@"graphics\android2");
+            drawRectangle2 = new Rectangle(400, 300, droid2.Width, droid2.Height);
 
             // STUDENTS: set the currentSprite variable to one of your sprite variables
 
@@ -162,7 +162,7 @@ namespace ProgrammingAssignment2
 
             spriteBatch.Draw(droid0, drawRectangle0, Color.White);
             //spriteBatch.Draw(droid1, drawRectangle1, Color.White);
-            //spriteBatch.Draw(droid2, drawRectangle2, Color.White);
+            spriteBatch.Draw(droid2, drawRectangle2, Color.White);
 
             spriteBatch.End();
 
