@@ -1,0 +1,53 @@
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\ProgrammingAssignment2.exe
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\ProgrammingAssignment2.pdb
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.csprojResolveAssemblyReference.cache
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.exe
+d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\ProgrammingAssignment2.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\ProgrammingAssignment2.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\Content\graphics\android0.xnb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\Content\graphics\android1.xnb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\bin\Windows\x86\Debug\Content\graphics\android2.xnb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.csprojResolveAssemblyReference.cache
