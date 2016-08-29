@@ -21,12 +21,7 @@ namespace ProgrammingAssignment2
         Texture2D droid0;
         Texture2D droid1;
         Texture2D droid2;
-
-        //Rectangle drawRectangle0;
-        //Rectangle drawRectangle1;
-        //Rectangle drawRectangle2;
-
-
+        
         // STUDENTS: declare variables for x and y speeds
         int xSpeed;
         int ySpeed;
@@ -73,14 +68,11 @@ namespace ProgrammingAssignment2
 
             // STUDENTS: load the sprite images here
             droid0 = Content.Load<Texture2D>(@"graphics\android0");
-            //drawRectangle0 = new Rectangle(150, 100, WindowWidth, WindowHeight);
-
+            
             droid1 = Content.Load<Texture2D>(@"graphics\android1");
-            //drawRectangle1 = new Rectangle(300, 200, WindowWidth, WindowHeight);
-
+           
             droid2 = Content.Load<Texture2D>(@"graphics\android2");
-            //drawRectangle2 = new Rectangle(400, 300, WindowWidth, WindowHeight);
-
+            
             // STUDENTS: set the currentSprite variable to one of your sprite variables
             currentSprite = droid0;
 
@@ -167,10 +159,7 @@ namespace ProgrammingAssignment2
 
             // STUDENTS: draw current sprite here
             spriteBatch.Begin();
-
-            //spriteBatch.Draw(droid0, drawRectangle, Color.White);
-            //spriteBatch.Draw(droid1, drawRectangle, Color.White);
-            //spriteBatch.Draw(droid2, drawRectangle, Color.White);
+            
             spriteBatch.Draw(currentSprite, drawRectangle, Color.White);
 
             spriteBatch.End();
