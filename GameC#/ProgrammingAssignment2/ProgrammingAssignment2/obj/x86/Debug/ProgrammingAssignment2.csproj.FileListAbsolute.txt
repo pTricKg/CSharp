@@ -23,3 +23,5 @@ d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\Programm
 d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.csprojResolveAssemblyReference.cache
 d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.exe
 d:\ptrickg\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment2\ProgrammingAssignment2\obj\x86\Debug\ProgrammingAssignment2.pdb
