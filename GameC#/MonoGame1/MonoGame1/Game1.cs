@@ -12,6 +12,10 @@ namespace MonoGame1
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        // declare window constants
+        const int WindowWidth = 800;
+        const int WindowHeight = 600;
+
         // draw support
         Texture2D bear0;
         Texture2D bear1;
@@ -27,8 +31,8 @@ namespace MonoGame1
             Content.RootDirectory = "Content";
 
             // resolution to 800 x 600
-            graphics.PreferredBackBufferWidth = 800;
-            graphics.PreferredBackBufferHeight = 600;
+            graphics.PreferredBackBufferWidth = WindowWidth;
+            graphics.PreferredBackBufferHeight = WindowHeight;
         }
 
         /// <summary>
