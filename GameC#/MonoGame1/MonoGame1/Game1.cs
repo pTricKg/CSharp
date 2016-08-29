@@ -102,6 +102,8 @@ namespace MonoGame1
             spriteBatch.Begin();
 
             spriteBatch.Draw(bear0, drawRectangle0, Color.White);
+            spriteBatch.Draw(bear1, drawRectangle1, Color.White);
+            spriteBatch.Draw(bear2, drawRectangle2, Color.White);
 
 
             spriteBatch.End();
