@@ -105,23 +105,23 @@ namespace ProgrammingAssignment2
 
                 // STUDENTS: uncomment the code below and make it generate a random number 
                 // between 0 and 2 inclusive using the rand field I provided
-                //int spriteNumber = rand.Next(0, 2);
+                int spriteNumber = rand.Next(0, 2);
 
                 // sets current sprite
                 // STUDENTS: uncomment the lines below and change sprite0, sprite1, and sprite2
                 //      to the three different names of your sprite variables
-                //if (spriteNumber == 0)
-                //{
-                //    currentSprite = droid0;
-                //}
-                //else if (spriteNumber == 1)
-                //{
-                //    currentSprite = droid1;
-                //}
-                //else if (spriteNumber == 2)
-                //{
-                //    currentSprite = droid2;
-                //}
+                if (spriteNumber == 0)
+                {
+                    currentSprite = droid0;
+                }
+                else if (spriteNumber == 1)
+                {
+                    currentSprite = droid1;
+                }
+                else if (spriteNumber == 2)
+                {
+                    currentSprite = droid2;
+                }
 
                 // STUDENTS: set the drawRectangle.Width and drawRectangle.Height to match the width and height of currentSprite
                 drawRectangle.Width = currentSprite.Width;
@@ -137,13 +137,13 @@ namespace ProgrammingAssignment2
                 // STUDENTS: write code below to generate random numbers  between -4 and 4 inclusive for the x and y speed 
                 // using the rand field I provided
                 // CAUTION: Don't redeclare the x speed and y speed variables here!
-                //xSpeed = rand.Next(-4, 4);
-                //ySpeed = rand.Next(-4, 4);
+                xSpeed = rand.Next(-4, 4);
+                ySpeed = rand.Next(-4, 4);
             }
 
             // STUDENTS: move the drawRectangle by the x speed and the y speed
-            //drawRectangle.X += xSpeed;
-            //drawRectangle.Y += ySpeed;
+            drawRectangle.X += xSpeed;
+            drawRectangle.Y += ySpeed;
 
 
             base.Update(gameTime);
