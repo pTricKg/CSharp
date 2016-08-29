@@ -12,6 +12,15 @@ namespace MonoGame1
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        // draw support
+        Texture2D bear0;
+        Texture2D bear1;
+        Texture2D bear2;
+
+        Rectangle drawRectangle0;
+        Rectangle drawRectangle1;
+        Rectangle drawRectangle2;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -43,6 +52,16 @@ namespace MonoGame1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            // load bears and draw rectangles
+            bear0 = Content.Load<Texture2D>(@"graphics\teddybear0");
+            drawRectangle0 = new Rectangle(150, 100, bear0.Width, bear0.Height);
+
+            bear1 = Content.Load<Texture2D>(@"graphics\teddybear1");
+            drawRectangle1 = new Rectangle(300, 200, bear0.Width, bear0.Height);
+
+            bear2 = Content.Load<Texture2D>(@"graphics\teddybear2");
+            drawRectangle2 = new Rectangle(400, 300, bear0.Width, bear0.Height);
 
             // TODO: use this.Content to load your game content here
         }
@@ -78,6 +97,14 @@ namespace MonoGame1
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            // draw bears
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(bear0, drawRectangle0, Color.White);
+
+
+            spriteBatch.End();
 
             // TODO: Add your drawing code here
 
