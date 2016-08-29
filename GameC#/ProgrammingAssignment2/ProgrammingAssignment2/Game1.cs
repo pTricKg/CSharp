@@ -82,6 +82,7 @@ namespace ProgrammingAssignment2
             drawRectangle2 = new Rectangle(400, 300, WindowWidth, WindowHeight);
 
             // STUDENTS: set the currentSprite variable to one of your sprite variables
+            currentSprite = droid0;
 
         }
 
@@ -119,18 +120,20 @@ namespace ProgrammingAssignment2
                 //      to the three different names of your sprite variables
                 //if (spriteNumber == 0)
                 //{
-                //    currentSprite = sprite0;
+                //    currentSprite = droid0;
                 //}
                 //else if (spriteNumber == 1)
                 //{
-                //    currentSprite = sprite1;
+                //    currentSprite = droid1;
                 //}
                 //else if (spriteNumber == 2)
                 //{
-                //    currentSprite = sprite2;
+                //    currentSprite = droid2;
                 //}
 
                 // STUDENTS: set the drawRectangle.Width and drawRectangle.Height to match the width and height of currentSprite
+                drawRectangle.Width = currentSprite.Width;
+                drawRectangle.Height = currentSprite.Height;
 
 
                 // STUDENTS: center the draw rectangle in the window. Note that the X and Y properties of the rectangle
@@ -138,7 +141,7 @@ namespace ProgrammingAssignment2
 
 
                 // STUDENTS: write code below to generate random numbers  between -4 and 4 inclusive for the x and y speed 
-				// using the rand field I provided
+                // using the rand field I provided
                 // CAUTION: Don't redeclare the x speed and y speed variables here!
 
             }
@@ -160,9 +163,9 @@ namespace ProgrammingAssignment2
             // STUDENTS: draw current sprite here
             spriteBatch.Begin();
 
-            spriteBatch.Draw(droid0, drawRectangle0, Color.White);
-            spriteBatch.Draw(droid1, drawRectangle1, Color.White);
-            spriteBatch.Draw(droid2, drawRectangle2, Color.White);
+            spriteBatch.Draw(droid0, drawRectangle, Color.White);
+            spriteBatch.Draw(droid1, drawRectangle, Color.White);
+            spriteBatch.Draw(droid2, drawRectangle, Color.White);
 
             spriteBatch.End();
 
