@@ -102,6 +102,9 @@ namespace MonoGame1
                 Exit();
 
             // TODO: Add your update logic here
+            bear0.Update();
+            bear1.Update();
+            bear2.Update();
 
             base.Update(gameTime);
         }
