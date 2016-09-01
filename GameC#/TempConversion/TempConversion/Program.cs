@@ -8,6 +8,11 @@ namespace TempConversion
 {
     class Program
     {
+        /// <summary>
+        /// Take user input of Fahrenheit and convert to Celsius
+        /// and back again.
+        /// </summary>
+        /// <param name="args">command line args</param>
         static void Main(string[] args)
         {
             // fields for collection
@@ -16,7 +21,7 @@ namespace TempConversion
             float calculatedFahrenheit;
 
             // Get Fahrenheit from user input
-            Console.WriteLine("Enter temperature in Fahrenheit: ");
+            Console.Write("Enter temperature in Fahrenheit: ");
             originalFahrenheit = float.Parse(Console.ReadLine());
 
             // Conversion for F to C degrees: F - 32 / 9 * 5
