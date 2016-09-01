@@ -1,1 +1,7 @@
 D:\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\bin\Debug\TempConversion.exe.config
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\bin\Debug\TempConversion.exe.config
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\bin\Debug\TempConversion.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\bin\Debug\TempConversion.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\obj\Debug\TempConversion.csprojResolveAssemblyReference.cache
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\obj\Debug\TempConversion.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\TempConversion\TempConversion\obj\Debug\TempConversion.pdb
