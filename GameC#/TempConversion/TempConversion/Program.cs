@@ -12,7 +12,7 @@ namespace TempConversion
         {
             // fields for collection
             float originalFahrenheit;
-            float calculatedCelsius:;
+            float calculatedCelsius;
             float calculatedFahrenheit;
 
             // Get Fahrenheit from user input
