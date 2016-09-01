@@ -17,9 +17,11 @@ namespace TempConversion
 
             // Get Fahrenheit from user input
             Console.WriteLine("Enter temperature in Fahrenheit: ");
-            string userFahrenheit = Console.ReadLine();
-            
+            originalFahrenheit = float.Parse(Console.ReadLine());
+
             // Conversion for F to C degrees: F - 32 / 9 * 5
+            calculatedCelsius = ((originalFahrenheit - 32) / 9) * 5;
+
             // Conversion for C to F: C * 9 / 5 + 32
         }
     }
