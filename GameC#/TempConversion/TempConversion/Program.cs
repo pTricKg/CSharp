@@ -23,6 +23,13 @@ namespace TempConversion
             calculatedCelsius = ((originalFahrenheit - 32) / 9) * 5;
 
             // Conversion for C to F: C * 9 / 5 + 32
+            calculatedFahrenheit = ((calculatedCelsius * 9) / 5) + 5;
+
+            // Results
+            Console.WriteLine(originalFahrenheit + " degrees Fahrenheit is "
+                + calculatedCelsius);
+            Console.WriteLine(calculatedCelsius + " degrees Celsius is "
+                + calculatedFahrenheit + " degrees Fahrenheit");
         }
     }
 }
