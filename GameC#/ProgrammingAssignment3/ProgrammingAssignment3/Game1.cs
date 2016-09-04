@@ -107,12 +107,17 @@ namespace ProgrammingAssignment3
 
             // STUDENTS: update rocks
             if(rockZero != null)
+            {
                 rockZero.Update(gameTime);
+            }                
             if(rockOne != null)
+            {
                 rockOne.Update(gameTime);
+            }               
             if(rockTwo != null)
+            {
                 rockTwo.Update(gameTime);
-            
+            }      
 
             // update timer
             elapsedDelayMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
@@ -121,11 +126,17 @@ namespace ProgrammingAssignment3
                 // STUDENTS: timer expired, so spawn new rock if fewer than 3 rocks in window
                 // Call the GetRandomRock method to do this
                 if (rockZero == null)
+                {
                     rockZero = GetRandomRock();
+                }                    
                 if (rockOne == null)
+                {
                     rockOne = GetRandomRock();
+                }                    
                 if (rockTwo == null)
+                {
                     rockTwo = GetRandomRock();
+                }                    
                 
                 // restart timer
                 elapsedDelayMilliseconds = 0;
@@ -135,11 +146,17 @@ namespace ProgrammingAssignment3
             // spawn a new random rock for it by calling the GetRandomRock method
             // Caution: Only check the property if the variable isn't null
             if (rockZero != null && rockZero.OutsideWindow)
+            {
                 rockZero = GetRandomRock();
+            }                
             if (rockOne != null && rockOne.OutsideWindow)
+            {
                 rockOne = GetRandomRock();
+            }                
             if (rockTwo != null && rockTwo.OutsideWindow)
+            {
                 rockTwo = GetRandomRock();
+            }                
 
             base.Update(gameTime);
         }
@@ -156,11 +173,17 @@ namespace ProgrammingAssignment3
             spriteBatch.Begin();
 
             if(rockZero != null)
+            {
                 rockZero.Draw(spriteBatch);
+            }
             if(rockOne != null)
+            {
                 rockOne.Draw(spriteBatch);
+            }                
             if(rockTwo != null)
+            {
                 rockTwo.Draw(spriteBatch);
+            }                
 
             spriteBatch.End();
 
