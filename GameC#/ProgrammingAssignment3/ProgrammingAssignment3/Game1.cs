@@ -26,15 +26,10 @@ namespace ProgrammingAssignment3
         Texture2D rockSprite1;
         Texture2D rockSprite2;
 
-
         // STUDENTS: declare variables for 3 rocks
-        //Rectangle rectZero;
-        //Rectangle rectOne;
-        //Rectangle rectTwo;
         Rock rockZero;
         Rock rockOne;
         Rock rockTwo;
-
 
         // delay support
         const int TotalDelayMilliseconds = 1000;
