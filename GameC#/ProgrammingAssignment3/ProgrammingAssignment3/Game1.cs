@@ -124,11 +124,11 @@ namespace ProgrammingAssignment3
                 {
                     rockZero = GetRandomRock();
                 }                    
-                if (rockOne == null)
+                else if (rockOne == null)
                 {
                     rockOne = GetRandomRock();
                 }                    
-                if (rockTwo == null)
+                else if (rockTwo == null)
                 {
                     rockTwo = GetRandomRock();
                 }                    
