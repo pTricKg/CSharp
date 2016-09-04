@@ -214,7 +214,7 @@ namespace ProgrammingAssignment3
         {
             // STUDENTS: Uncommment and modify the code below as appropriate to return 
             // a random sprite
-            int spriteNumber = rand.Next(0,4);
+            int spriteNumber = rand.Next(0,3);
             if (spriteNumber == 0)
             {
                 return rockSprite0;
@@ -241,7 +241,7 @@ namespace ProgrammingAssignment3
         {
             // STUDENTS: Uncommment and modify the code below as appropriate to return 
             // a random velocity
-            int velocityNumber = rand.Next(0,4);
+            int velocityNumber = rand.Next(0,3);
             if (velocityNumber == 0)
             {
                 return upLeft;
