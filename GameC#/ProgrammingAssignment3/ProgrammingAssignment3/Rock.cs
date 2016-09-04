@@ -93,8 +93,8 @@ namespace ProgrammingAssignment3
             if (!OutsideWindow)
             {
                 // STUDENTS: Update the rock's location
-                drawRectangle.X = (int)(velocity.X * gameTime.ElapsedGameTime.Milliseconds) + drawRectangle.X;
-                drawRectangle.Y = (int)(velocity.Y * gameTime.ElapsedGameTime.Milliseconds) + drawRectangle.Y;
+                drawRectangle.X = (int)((velocity.X * gameTime.ElapsedGameTime.Milliseconds) + drawRectangle.X);
+                drawRectangle.Y = (int)((velocity.Y * gameTime.ElapsedGameTime.Milliseconds) + drawRectangle.Y);
 
                 // STUDENTS: Set outsideWindow to true if the rock is outside the window
                 outsideWindow = drawRectangle.Right < 0 ||

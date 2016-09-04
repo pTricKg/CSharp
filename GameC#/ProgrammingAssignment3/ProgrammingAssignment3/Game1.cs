@@ -31,6 +31,7 @@ namespace ProgrammingAssignment3
         Rock rockOne;
         Rock rockTwo;
 
+
         // delay support
         const int TotalDelayMilliseconds = 1000;
         int elapsedDelayMilliseconds = 0;
