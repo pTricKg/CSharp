@@ -23,3 +23,5 @@ D:\Dropbox\Courses\GDD 1200\Programming Assignments MonoGame\Programming Assignm
 D:\Dropbox\Courses\GDD 1200\Programming Assignments MonoGame\Programming Assignment 3\blackboard\Windows\ProgrammingAssignment3\ProgrammingAssignment3\obj\x86\Debug\ProgrammingAssignment3.csprojResolveAssemblyReference.cache
 D:\Dropbox\Courses\GDD 1200\Programming Assignments MonoGame\Programming Assignment 3\blackboard\Windows\ProgrammingAssignment3\ProgrammingAssignment3\obj\x86\Debug\ProgrammingAssignment3.exe
 D:\Dropbox\Courses\GDD 1200\Programming Assignments MonoGame\Programming Assignment 3\blackboard\Windows\ProgrammingAssignment3\ProgrammingAssignment3\obj\x86\Debug\ProgrammingAssignment3.pdb
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment3\ProgrammingAssignment3\obj\x86\Debug\ProgrammingAssignment3.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment3\ProgrammingAssignment3\obj\x86\Debug\ProgrammingAssignment3.pdb

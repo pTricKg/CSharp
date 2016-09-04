@@ -22,8 +22,14 @@ namespace ProgrammingAssignment3
             WindowWidth / 2, WindowHeight / 2);
 
         // STUDENTS: declare variables for 3 rock sprites
+        Texture2D rockZero;
+        Texture2D rockOne;
+        Texture2D rockTwo;
 
         // STUDENTS: declare variables for 3 rocks
+        Rectangle rectZero;
+        Rectangle rectOne;
+        Rectangle rectTwo;
 
         // delay support
         const int TotalDelayMilliseconds = 1000;
