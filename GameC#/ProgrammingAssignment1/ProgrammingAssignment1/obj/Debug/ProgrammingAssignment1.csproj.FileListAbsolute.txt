@@ -4,3 +4,6 @@ D:\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\
 D:\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.exe
 D:\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.pdb
 D:\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.csprojResolveAssemblyReference.cache
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\bin\Debug\ProgrammingAssignment1.exe.config
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.exe
+D:\pTricKg\Documents\GitHub\CSharp\GameC#\ProgrammingAssignment1\ProgrammingAssignment1\obj\Debug\ProgrammingAssignment1.pdb
