@@ -3,5 +3,10 @@
 	<uses-sdk />
 	<uses-feature android:name="android.hardware.type.watch" />
 	<application android:label="NotSureYet" android:theme="@android:style/Theme.DeviceDefault">
+    <intent-filter>
+      <action android:name="android.intent.action.MAIN" />
+
+      <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
 	</application>
 </manifest>
