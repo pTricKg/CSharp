@@ -88,6 +88,8 @@ namespace GameProject
             // load projectile and explosion sprites
 
             // add initial game objects
+            burger = new Burger(Content, @"graphics/burger", graphics.PreferredBackBufferHeight / 2, graphics.PreferredBackBufferWidth
+                 / 2, null);
 
             // set initial health and score strings
         }
@@ -155,7 +157,7 @@ namespace GameProject
             spriteBatch.Begin();
 
             // draw game objects
-            //burger.Draw(spriteBatch);
+            burger.Draw(spriteBatch);
             foreach (TeddyBear bear in bears)
             {
                 bear.Draw(spriteBatch);
@@ -170,7 +172,7 @@ namespace GameProject
             }
 
             // draw score and health
-
+            
             spriteBatch.End();
 
             base.Draw(gameTime);
