@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/pTricKg/Documents/GitHub/CSharp/GameC#/GameProject/GameProjectContent/graphics/burger.png</File>
+    <File>D:/pTricKg/Documents/GitHub/CSharp/GameC#/GameProject/GameProjectContent/graphics/explosion.png</File>
+    <File>D:/pTricKg/Documents/GitHub/CSharp/GameC#/GameProject/GameProjectContent/graphics/frenchfries.png</File>
+    <File>D:/pTricKg/Documents/GitHub/CSharp/GameC#/GameProject/GameProjectContent/graphics/teddybear.png</File>
+    <File>D:/pTricKg/Documents/GitHub/CSharp/GameC#/GameProject/GameProjectContent/graphics/teddybearprojectile.png</File>
+  </SourceFiles>
+</SourceFileCollection>
