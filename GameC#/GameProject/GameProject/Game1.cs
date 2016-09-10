@@ -88,8 +88,8 @@ namespace GameProject
             // load projectile and explosion sprites
 
             // add initial game objects
-            burger = new Burger(Content, @"graphics/burger", graphics.PreferredBackBufferHeight / 2, graphics.PreferredBackBufferWidth
-                 / 2, null);
+            burger = new Burger(Content, @"graphics/burger", graphics.PreferredBackBufferWidth / 2, 
+                graphics.PreferredBackBufferHeight - graphics.PreferredBackBufferHeight / 8, null);
 
             // set initial health and score strings
         }
