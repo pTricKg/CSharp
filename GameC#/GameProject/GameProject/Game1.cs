@@ -213,9 +213,9 @@ namespace GameProject
         {
             // generate random location
             int x = GetRandomLocation(GameConstants.SpawnBorderSize, 
-                GameConstants.SpawnBorderSize);
-            int y = GetRandomLocation(GameConstants.SpawnBorderSize, 
-                GameConstants.SpawnBorderSize);
+                graphics.PreferredBackBufferWidth - 2 * GameConstants.SpawnBorderSize);
+            int y = GetRandomLocation(GameConstants.SpawnBorderSize,
+                graphics.PreferredBackBufferHeight - 2 * GameConstants.SpawnBorderSize);
 
             // generate random velocity
             float velocity = GameConstants.MinBearSpeed +
