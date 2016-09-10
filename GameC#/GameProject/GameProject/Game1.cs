@@ -221,7 +221,9 @@ namespace GameProject
             float velocity = GameConstants.MinBearSpeed +
                 RandomNumberGenerator.NextFloat(GameConstants.BearSpeedRange);
             float angle = RandomNumberGenerator.NextFloat((float)Math.PI);
-            Vector2 vector = new Vector2(velocity, angle);
+            Vector2 vector = new Vector2((float)(velocity * Math.Cos(angle)), 
+                (float)(velocity * Math.Sin(angle)));
+
             // create new bear
             TeddyBear newBear = new TeddyBear(Content, @"graphics/TeddyBear", x, y, vector,
                 null, null);
