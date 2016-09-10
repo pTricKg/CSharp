@@ -1,8 +1,6 @@
 .gitignore
 .gitattributes
 .vs
-../../../*bin/
-../../../*obj/
 bin/
 obj/
 /Properties
