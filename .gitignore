@@ -1,8 +1,10 @@
 .gitignore
 .gitattributes
 .vs
-/bin
-/obj
+../../../*bin/
+../../../*obj/
+bin/
+obj/
 /Properties
 *.csproj
 *.sln
