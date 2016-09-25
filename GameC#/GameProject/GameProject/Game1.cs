@@ -222,11 +222,11 @@ namespace GameProject
                 graphics.PreferredBackBufferHeight - 2 * GameConstants.SpawnBorderSize);
 
             // generate random velocity
-            float velocity = GameConstants.MinBearSpeed +
+            float speed = GameConstants.MinBearSpeed +
                 RandomNumberGenerator.NextFloat(GameConstants.BearSpeedRange);
-            float angle = RandomNumberGenerator.NextFloat((float)Math.PI);
-            Vector2 vector = new Vector2((float)(velocity * Math.Cos(angle)),
-                (float)(velocity * Math.Sin(angle)));
+            float angle = RandomNumberGenerator.NextFloat((float)Math.PI * 2);
+            Vector2 vector = new Vector2((float)(speed * Math.Cos(angle)),
+                (float)(speed * Math.Sin(angle)));
 
             // create new bear
             TeddyBear newBear = new TeddyBear(Content, @"graphics/TeddyBear", x, y, vector,
