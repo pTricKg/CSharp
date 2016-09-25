@@ -104,6 +104,13 @@ namespace GameProject
                 // timer concept (for animations) introduced in Chapter 7
 
                 // shoot if appropriate
+                if (mouse.LeftButton == ButtonState.Pressed)
+                {
+                    Projectile projectile = new Projectile(ProjectileType.FrenchFries, Game1.GetProjectileSprite(ProjectileType.FrenchFries), 
+                        drawRectangle.Center.X, drawRectangle.Center.Y + GameConstants.FrenchFriesProjectileOffset, GameConstants.FrenchFriesProjectileSpeed);
+                    Game1.AddProjectile(projectile);
+                }
+
             }
         }
 
