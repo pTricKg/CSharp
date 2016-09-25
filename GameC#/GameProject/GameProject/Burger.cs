@@ -114,7 +114,8 @@ namespace GameProject
                 if (canShoot == false)
                 {
                     elapsedCooldownMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
-                    if (GameConstants.BurgerTotalCooldownMilliseconds < elapsedCooldownMilliseconds)
+                    if (GameConstants.BurgerTotalCooldownMilliseconds < elapsedCooldownMilliseconds
+                        || mouse.LeftButton == ButtonState.Released)
                     {
                         canShoot = true;
                         elapsedCooldownMilliseconds = 0;
