@@ -136,7 +136,8 @@ namespace GameProject
             drawRectangle.X += (int)(velocity.X *
                 gameTime.ElapsedGameTime.Milliseconds);
             drawRectangle.Y += (int)(velocity.Y *
-                gameTime.ElapsedGameTime.Milliseconds);
+                gameTime.ElapsedGameTime.Milliseconds);
+
 
             // bounce as necessary
             BounceTopBottom();
@@ -144,6 +145,16 @@ namespace GameProject
 
             // fire projectile as appropriate
             // timer concept (for animations) introduced in Chapter 7
+            elapsedShotMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
+            if (elapsedShotMilliseconds > firingDelay)
+            {
+                elapsedShotMilliseconds = 0;
+                firingDelay = GetRandomFiringDelay();
+
+                Projectile projectile = new Projectile(ProjectileType.TeddyBear, Game1.GetProjectileSprite(ProjectileType.TeddyBear),
+                    drawRectangle.Center.X, drawRectangle.Center.Y + GameConstants.TeddyBearProjectileOffset, GetProjectileYVelocity());
+                Game1.AddProjectile(projectile);
+            }
 
         }
 
