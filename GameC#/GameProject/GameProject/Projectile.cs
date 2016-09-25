@@ -89,7 +89,8 @@ namespace GameProject
         public void Update(GameTime gameTime)
         {
             // move projectile
-            drawRectangle.Y += (int)(yVelocity * gameTime.ElapsedGameTime.Milliseconds);            
+            drawRectangle.Y += (int)(yVelocity * gameTime.ElapsedGameTime.Milliseconds);
+            
             // check for outside game window
             if (drawRectangle.Y < 0 || GameConstants.WindowHeight < drawRectangle.Y)
             {
