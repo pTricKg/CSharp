@@ -86,6 +86,8 @@ namespace GameProject
             // load sprite font
 
             // load projectile and explosion sprites
+            teddyBearProjectileSprite = Content.Load<Texture2D>(@"graphics/teddybearprojectile");
+            frenchFriesSprite = Content.Load<Texture2D>(@"graphics/frenchfriessprite");
 
             // add initial game objects
             burger = new Burger(Content, @"graphics/burger", graphics.PreferredBackBufferWidth / 2, 
