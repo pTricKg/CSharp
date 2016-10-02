@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using TeddyMineExplosion;
 
 namespace ProgrammingAssignment5
 {
@@ -11,6 +12,32 @@ namespace ProgrammingAssignment5
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        // window dimensions
+        const int WindowWdith = 800;
+        const int WindowHeight = 600;
+
+        // teddy support
+        Texture2D teddySprite;
+
+        // spawning support
+        int totalSpawnDelayMilliseconds = 3000;
+        int elapsedSpawnDelayMilliseconds = 0;
+
+        // mine support
+        Texture2D mineSprite;
+        List<Mine> mines = new List<Mine>();
+
+        // saved for efficiency
+        Texture2D explosionSprite;
+
+        // game objects
+        List<TeddyBear> bears = new List<TeddyBear>();
+        List<Explosion> explosions = new List<Explosion>();
+
+        // click processing
+        bool leftClickStarted = false;
+        bool leftButtonReleased = true;
 
         public Game1()
         {
