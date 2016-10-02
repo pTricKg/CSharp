@@ -43,6 +43,14 @@ namespace ProgrammingAssignment5
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            // set resolution
+            graphics.PreferredBackBufferHeight = WindowHeight;
+            graphics.PreferredBackBufferWidth = WindowWdith;
+
+            // set mouse visible
+            IsMouseVisible = true;
+
         }
 
         /// <summary>
@@ -66,6 +74,13 @@ namespace ProgrammingAssignment5
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            // load sprites
+            teddySprite = Content.Load<Texture2D>("teddybear");
+             
+            mineSprite = Content.Load<Texture2D>("mine");
+            
+            explosionSprite = Content.Load<Texture2D>("explosion");
 
             // TODO: use this.Content to load your game content here
         }
