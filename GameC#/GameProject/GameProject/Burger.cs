@@ -108,7 +108,7 @@ namespace GameProject
                 {
                     canShoot = false;
                     Projectile projectile = new Projectile(ProjectileType.FrenchFries, Game1.GetProjectileSprite(ProjectileType.FrenchFries), 
-                        drawRectangle.Center.X, drawRectangle.Center.Y + GameConstants.FrenchFriesProjectileOffset, GameConstants.FrenchFriesProjectileSpeed);
+                        drawRectangle.Center.X, drawRectangle.Center.Y - GameConstants.FrenchFriesProjectileOffset, -GameConstants.FrenchFriesProjectileSpeed);
                     Game1.AddProjectile(projectile);
                 }
                 if (canShoot == false)
