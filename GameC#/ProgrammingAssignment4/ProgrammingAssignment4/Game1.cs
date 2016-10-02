@@ -118,7 +118,7 @@ namespace ProgrammingAssignment4
                     pickups.Add(pickup);
 
                     // STUDENTS: if this is the first pickup in the list, set teddy target
-                    if (pickups.IndexOf(pickup) == 0)
+                    if (pickups.Count == 1)
                     {
                         teddy.SetTarget(new Vector2(mouse.X, mouse.Y));
                     }

@@ -11,7 +11,8 @@ namespace DorkinCSharp1
         static void Main(string[] args)
         {
             
-            Console.Write("Your input will print next: ");
+            Console.WriteLine("Your input will print next.\n");
+			
             String myString = Console.ReadLine();
 
             // print user input to console
@@ -25,7 +26,6 @@ namespace DorkinCSharp1
             int minutesInDay = hours * minutes;
             int secondsInDay = minutesInDay * seconds;
 
-            Console.WriteLine("");
             Console.WriteLine("Minutes in day: " + minutesInDay);
             Console.WriteLine("\nSeconds in day: " + secondsInDay);
 
@@ -35,16 +35,10 @@ namespace DorkinCSharp1
 
             // convert input string to int
             int num = Int32.Parse(myNum);
-
-            // calc days from user input
-            int userHoursInDay = num * hours;
-
             // calc seconds from user input
             int userSecondsInDay = num * secondsInDay;
-
             // print user input
-            Console.WriteLine(myNum + " day is your input.\n");
-            Console.WriteLine("There are " + userHoursInDay + " hours in " + myNum + " days.\n");
+            Console.WriteLine(myNum + " is your input.\n");
             Console.WriteLine("There are " + userSecondsInDay + " seconds in " + myNum + " days.\n");
 
             // calc minutes from user input

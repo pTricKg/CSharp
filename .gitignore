@@ -6,6 +6,7 @@ obj/
 /Properties
 *.csproj
 *.sln
+*.vs/
 App.config
 
 # Windows image file caches
