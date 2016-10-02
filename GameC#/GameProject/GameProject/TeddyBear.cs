@@ -151,8 +151,10 @@ namespace GameProject
                 elapsedShotMilliseconds = 0;
                 firingDelay = GetRandomFiringDelay();
 
-                Projectile projectile = new Projectile(ProjectileType.TeddyBear, Game1.GetProjectileSprite(ProjectileType.TeddyBear),
-                    drawRectangle.Center.X, drawRectangle.Center.Y + GameConstants.TeddyBearProjectileOffset, GetProjectileYVelocity());
+                Projectile projectile = new Projectile(ProjectileType.TeddyBear, 
+                    Game1.GetProjectileSprite(ProjectileType.TeddyBear),
+                    drawRectangle.Center.X, 
+                    drawRectangle.Center.Y + GameConstants.TeddyBearProjectileOffset, GetProjectileYVelocity());
                 Game1.AddProjectile(projectile);
             }
 
