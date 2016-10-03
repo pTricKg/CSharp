@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
 using TeddyMineExplosion;
 
 namespace ProgrammingAssignment5
@@ -14,11 +16,12 @@ namespace ProgrammingAssignment5
         SpriteBatch spriteBatch;
 
         // window dimensions
-        const int WindowWdith = 800;
+        const int WindowWidth = 800;
         const int WindowHeight = 600;
 
         // teddy support
         Texture2D teddySprite;
+        Random rand = new Random();
 
         // spawning support
         int totalSpawnDelayMilliseconds = 3000;
@@ -43,10 +46,9 @@ namespace ProgrammingAssignment5
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-
-            // set resolution
+            
             graphics.PreferredBackBufferHeight = WindowHeight;
-            graphics.PreferredBackBufferWidth = WindowWdith;
+            graphics.PreferredBackBufferWidth = WindowWidth;
 
             // set mouse visible
             IsMouseVisible = true;
@@ -76,11 +78,11 @@ namespace ProgrammingAssignment5
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // load sprites
-            teddySprite = Content.Load<Texture2D>("teddybear");
+            teddySprite = Content.Load<Texture2D>(@"graphics/teddybear");
              
-            mineSprite = Content.Load<Texture2D>("mine");
+            mineSprite = Content.Load<Texture2D>(@"graphics/mine");
             
-            explosionSprite = Content.Load<Texture2D>("explosion");
+            explosionSprite = Content.Load<Texture2D>(@"graphics/explosion");
 
             // TODO: use this.Content to load your game content here
         }
@@ -105,7 +107,95 @@ namespace ProgrammingAssignment5
                 Exit();
 
             // TODO: Add your update logic here
+            // spawn teddies
+            elapsedSpawnDelayMilliseconds += gameTime.ElapsedGameTime.Milliseconds;
+            if (elapsedSpawnDelayMilliseconds > totalSpawnDelayMilliseconds)
+            {
+                elapsedSpawnDelayMilliseconds = 0;
+                totalSpawnDelayMilliseconds = rand.Next(4) * 1000;
+                // set velocity
+                float Xvelocity = (float)rand.NextDouble() - 0.5f;
+                float Yvelocity = (float)rand.NextDouble() - 0.5f;
+                bears.Add(new TeddyBear(teddySprite,
+                    new Vector2(Xvelocity, Yvelocity),
+                    WindowWidth, WindowHeight));
+            }
+            // update bears
+            foreach (TeddyBear teddyBear in bears)
+            {
+                teddyBear.Update(gameTime);
+            }
+            // mouse stuff
+            MouseState mouse = Mouse.GetState();
+            if (mouse.LeftButton == ButtonState.Pressed &&
+                leftButtonReleased)
+            {
+                leftClickStarted = true;
+                leftButtonReleased = false;
+            }
+            else if (mouse.LeftButton == ButtonState.Released)
+            {
+                leftButtonReleased = true;
 
+                if (leftClickStarted)
+                {
+                    leftClickStarted = false;
+                    
+                    Mine mine = new Mine(mineSprite, mouse.X, mouse.Y);
+                    mines.Add(mine);
+
+                }
+            }
+
+            // check for collisions
+            foreach (Mine mine in mines)
+            {
+                if (mine.Active)
+                {
+                    foreach (TeddyBear bear in bears)
+                    {
+                        if (bear.Active)
+                        {
+                            if (bear.CollisionRectangle.Intersects(mine.CollisionRectangle))
+                            {
+                                bear.Active = false;
+                                mine.Active = false;
+                                explosions.Add(new Explosion(explosionSprite, mine.CollisionRectangle.Center.X, mine.CollisionRectangle.Center.Y));
+                            }
+                        }
+                    }
+                }
+            }
+
+            //update explosions
+            foreach (Explosion explosion in explosions)
+            {
+                explosion.Update(gameTime);
+            }
+            // remove dead teddies
+            for (int i = bears.Count - 1; i >= 0; i--)
+            {
+                if (!bears[i].Active)
+                {
+                    bears.RemoveAt(i);
+                }
+            }
+            // remove dead mines
+            for (int i = mines.Count - 1; i >= 0; i--)
+            {
+                if (!mines[i].Active)
+                {
+                    mines.RemoveAt(i);
+                }
+            }
+            // remove dead explosions
+            for (int i = explosions.Count - 1; i >= 0; i--)
+            {
+                if (!explosions[i].Playing)
+                {
+                    explosions.RemoveAt(i);
+                }
+            }
             base.Update(gameTime);
         }
 
@@ -118,6 +208,22 @@ namespace ProgrammingAssignment5
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            // draw game objects
+            spriteBatch.Begin();
+
+            foreach (TeddyBear teddyBear in bears)
+            {
+                teddyBear.Draw(spriteBatch);
+            }
+            foreach (Mine mine in mines)
+            {
+                mine.Draw(spriteBatch);
+            }
+            foreach (Explosion explosion in explosions)
+            {
+                explosion.Draw(spriteBatch);
+            }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
