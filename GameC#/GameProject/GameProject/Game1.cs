@@ -88,6 +88,7 @@ namespace GameProject
             // load projectile and explosion sprites
             teddyBearProjectileSprite = Content.Load<Texture2D>(@"graphics/teddybearprojectile");
             frenchFriesSprite = Content.Load<Texture2D>(@"graphics/frenchfries");
+            explosionSpriteStrip = Content.Load<Texture2D>(@"graphics/explosion");
 
             // add initial game objects
             burger = new Burger(Content, @"graphics/burger", graphics.PreferredBackBufferWidth / 2, 
@@ -152,7 +153,8 @@ namespace GameProject
                     {
                         bear.Active = false;
                         projectile.Active = false;
-                        Console.WriteLine("direct hit");
+                        explosions.Add(new Explosion(explosionSpriteStrip,
+                            bear.Location.X, bear.Location.Y));
                     }
 
                 }
