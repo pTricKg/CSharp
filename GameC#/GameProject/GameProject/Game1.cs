@@ -136,6 +136,12 @@ namespace GameProject
             }
 
             // check and resolve collisions between teddy bears
+
+            // check and resolve collisions between burger and teddy bears
+
+            // check and resolve collisions between burger and projectiles
+
+            // check and resolve collisions between teddy bears and projectiles
             foreach (TeddyBear bear in bears)
             {
                 foreach (Projectile projectile in projectiles)
@@ -151,13 +157,6 @@ namespace GameProject
 
                 }
             }
-
-            // check and resolve collisions between burger and teddy bears
-
-            // check and resolve collisions between burger and projectiles
-
-            // check and resolve collisions between teddy bears and projectiles
-
             // clean out inactive teddy bears and add new ones as necessary
             for (int i = bears.Count - 1; i >= 0; i--)
             {
