@@ -94,8 +94,11 @@ namespace GameProject
             burger = new Burger(Content, @"graphics/burger", graphics.PreferredBackBufferWidth / 2, 
                 graphics.PreferredBackBufferHeight - graphics.PreferredBackBufferHeight / 8, null);
 
-            SpawnBear();
-
+            for (int i = 0; i < GameConstants.MaxBears; i++)
+            {
+                SpawnBear();
+            }
+            
             // set initial health and score strings
         }
 
@@ -179,7 +182,7 @@ namespace GameProject
             // clean out finished explosions
             for (int i = explosions.Count - 1; i >= 0; i--)
             {
-                if (!explosions[i].Finished)
+                if (explosions[i].Finished)
                 {
                     explosions.RemoveAt(i);
                 }
