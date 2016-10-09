@@ -152,6 +152,27 @@ namespace GameProject
                             GameConstants.WindowWidth, GameConstants.WindowHeight,
                             bears[i].Velocity, bears[i].DrawRectangle, 
                             bears[j].Velocity, bears[j].DrawRectangle);
+                        if (bearCollision != null)
+                        {
+                            if (bearCollision.FirstOutOfBounds)
+                            {
+                                bears[i].Active = false;
+                            }
+                            else
+                            {
+                                bears[i].Velocity = bearCollision.FirstVelocity;
+                                bears[i].DrawRectangle = bearCollision.FirstDrawRectangle;
+                            }
+                            if (bearCollision.SecondOutOfBounds)
+                            {
+                                bears[j].Active = false;
+                            }
+                            else
+                            {
+                                bears[j].Velocity = bearCollision.SecondVelocity;
+                                bears[j].DrawRectangle = bearCollision.SecondDrawRectangle;
+                            }
+                        }
                     }
                 }
             }
