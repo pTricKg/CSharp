@@ -136,6 +136,21 @@ namespace GameProject
             }
 
             // check and resolve collisions between teddy bears
+            foreach (TeddyBear bear in bears)
+            {
+                foreach (Projectile projectile in projectiles)
+                {
+                    if (bear.Active && projectile.Active
+                        && bear.CollisionRectangle.Intersects(projectile.CollisionRectangle)
+                        && projectile.Type == ProjectileType.FrenchFries)
+                    {
+                        bear.Active = false;
+                        projectile.Active = false;
+                        Console.WriteLine("direct hit");
+                    }
+
+                }
+            }
 
             // check and resolve collisions between burger and teddy bears
 
@@ -144,8 +159,21 @@ namespace GameProject
             // check and resolve collisions between teddy bears and projectiles
 
             // clean out inactive teddy bears and add new ones as necessary
-
+            for (int i = bears.Count - 1; i >= 0; i--)
+            {
+                if (!bears[i].Active)
+                {
+                    bears.RemoveAt(i);
+                }
+            }
             // clean out inactive projectiles
+            for (int i = projectiles.Count - 1; i >= 0; i--)
+            {
+                if (!projectiles[i].Active)
+                {
+                    projectiles.RemoveAt(i);
+                }
+            }
 
             // clean out finished explosions
 
