@@ -177,6 +177,13 @@ namespace GameProject
             }
 
             // clean out finished explosions
+            for (int i = explosions.Count - 1; i >= 0; i--)
+            {
+                if (!explosions[i].Finished)
+                {
+                    explosions.RemoveAt(i);
+                }
+            }
 
             base.Update(gameTime);
         }
