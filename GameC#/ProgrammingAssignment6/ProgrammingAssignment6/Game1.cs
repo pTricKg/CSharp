@@ -174,7 +174,30 @@ namespace ProgrammingAssignment6
             }
 
             // game state-specific processing
-
+            switch (currentState)
+            {
+                case GameState.CheckingHandOver:
+                    dealerHand[0].FlipOver();
+                    GetBlockjuckScore(playerHand);
+                    currentState = GameState.WaitingForPlayer;
+                    break;
+                case GameState.PlayerHitting:
+                    int playerHandSize = playerHand.Count;
+                    Card playerCard = deck.TakeTopCard();
+                    playerCard.X = TopCardOffset;
+                    playerCard.Y = TopCardOffset + (playerHandSize + VerticalCardSpacing);
+                    playerCard.FlipOver();
+                    playerHand.Add(playerCard);
+                    playerScoreMessage = new Message(ScoreMessagePrefix + GetBlockjuckScore(playerHand).ToString(),
+                        messageFont,
+                        new Vector2(HorizontalMessageOffset, ScoreMessageTopOffset));
+                    messages[0] = playerScoreMessage;
+                    playerHit = true;
+                    currentState = GameState.WaitingForDealer;
+                    break;
+                default:
+                    break;
+            }
 
             base.Update(gameTime);
         }
