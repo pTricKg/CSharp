@@ -201,6 +201,16 @@ namespace ProgrammingAssignment6
                     playerHit = true;
                     currentState = GameState.WaitingForDealer;
                     break;
+                case GameState.DealerHitting:
+                    int dealerHandSize = dealerHand.Count;
+                    Card dealerCard = deck.TakeTopCard();
+                    dealerCard.X = TopCardOffset + HorizontalMenuButtonOffset + HorizontalCardOffset;
+                    dealerCard.Y = TopCardOffset + (dealerHandSize * VerticalCardSpacing);
+                    dealerCard.FlipOver();
+                    dealerHand.Add(dealerCard);
+                    dealerHit = true;
+                    currentState = GameState.CheckingHandOver;
+                    break;
                 default:
                     break;
             }
