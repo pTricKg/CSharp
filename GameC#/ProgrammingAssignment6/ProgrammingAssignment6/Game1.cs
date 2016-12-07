@@ -33,6 +33,8 @@ namespace ProgrammingAssignment6
         const int VerticalCardSpacing = 125;
 
         // messages
+        const string PlayerWins = "Player Wins!";
+        const string DealerWins = "Dealer Wins!";
         SpriteFont messageFont;
         const string ScoreMessagePrefix = "Score: ";
         Message playerScoreMessage;
@@ -177,6 +179,10 @@ namespace ProgrammingAssignment6
             switch (currentState)
             {
                 case GameState.CheckingHandOver:
+                    if (GetBlockjuckScore(playerHand) > MaxHandValue)
+                    {
+                        winnerMessage = new Message(DealerWins, messageFont, winnerMessageLocation);
+                    }
                     dealerHand[0].FlipOver();
                     GetBlockjuckScore(playerHand);
                     currentState = GameState.WaitingForPlayer;
