@@ -211,6 +211,12 @@ namespace ProgrammingAssignment6
                     dealerHit = true;
                     currentState = GameState.CheckingHandOver;
                     break;
+                case GameState.WaitingForDealer:
+                    if (GetBlockjuckScore(dealerHand) <= 16)
+                        currentState = GameState.DealerHitting;
+                    else
+                        currentState = GameState.CheckingHandOver;
+                    break;
                 case GameState.Exiting:
                     Exit();
                     break;
