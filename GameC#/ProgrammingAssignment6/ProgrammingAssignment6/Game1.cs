@@ -211,6 +211,9 @@ namespace ProgrammingAssignment6
                     dealerHit = true;
                     currentState = GameState.CheckingHandOver;
                     break;
+                case GameState.Exiting:
+                    Exit();
+                    break;
                 default:
                     break;
             }
