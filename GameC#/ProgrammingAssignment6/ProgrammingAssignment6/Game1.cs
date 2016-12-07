@@ -37,7 +37,8 @@ namespace ProgrammingAssignment6
         const string DealerWins = "Dealer Wins!";
         const string TIE = "Tie!";
         SpriteFont messageFont;
-        const string ScoreMessagePrefix = "Score: ";
+        const string DealerScoreMessagePrefix = "Dealer Score: ";
+        const string PlayerScoreMessagePrefix = "Player Score: ";
         Message playerScoreMessage;
         Message dealerScoreMessage;
         Message winnerMessage;
@@ -132,7 +133,7 @@ namespace ProgrammingAssignment6
 
             // load sprite font, create message for player score and add to list
             messageFont = Content.Load<SpriteFont>(@"fonts\Arial24");
-            playerScoreMessage = new Message(ScoreMessagePrefix + GetBlockjuckScore(playerHand).ToString(),
+            playerScoreMessage = new Message(PlayerScoreMessagePrefix + GetBlockjuckScore(playerHand).ToString(),
                 messageFont,
                 new Vector2(HorizontalMessageOffset, ScoreMessageTopOffset));
             messages.Add(playerScoreMessage);
@@ -183,7 +184,7 @@ namespace ProgrammingAssignment6
                     if (GetBlockjuckScore(playerHand) > MaxHandValue || GetBlockjuckScore(dealerHand) > MaxHandValue || (!playerHit && !dealerHit))
                     {
                         dealerHand[0].FlipOver();
-                        dealerScoreMessage = new Message(ScoreMessagePrefix + GetBlockjuckScore(dealerHand).ToString(),
+                        dealerScoreMessage = new Message(DealerScoreMessagePrefix + GetBlockjuckScore(dealerHand).ToString(),
                         messageFont,
                         new Vector2(TopCardOffset + HorizontalMessageOffset + HorizontalMenuButtonOffset, ScoreMessageTopOffset));
                         messages.Add(dealerScoreMessage);
@@ -227,7 +228,7 @@ namespace ProgrammingAssignment6
                     playerCard.Y = TopCardOffset + (playerHandSize + VerticalCardSpacing);
                     playerCard.FlipOver();
                     playerHand.Add(playerCard);
-                    playerScoreMessage = new Message(ScoreMessagePrefix + GetBlockjuckScore(playerHand).ToString(),
+                    playerScoreMessage = new Message(PlayerScoreMessagePrefix + GetBlockjuckScore(playerHand).ToString(),
                         messageFont,
                         new Vector2(HorizontalMessageOffset, ScoreMessageTopOffset));
                     messages[0] = playerScoreMessage;
