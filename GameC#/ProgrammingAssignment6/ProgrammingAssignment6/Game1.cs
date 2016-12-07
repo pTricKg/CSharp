@@ -35,6 +35,7 @@ namespace ProgrammingAssignment6
         // messages
         const string PlayerWins = "Player Wins!";
         const string DealerWins = "Dealer Wins!";
+        const string TIE = "Tie!";
         SpriteFont messageFont;
         const string ScoreMessagePrefix = "Score: ";
         Message playerScoreMessage;
@@ -179,13 +180,45 @@ namespace ProgrammingAssignment6
             switch (currentState)
             {
                 case GameState.CheckingHandOver:
-                    if (GetBlockjuckScore(playerHand) > MaxHandValue)
+                    if (GetBlockjuckScore(playerHand) > MaxHandValue || GetBlockjuckScore(dealerHand) > MaxHandValue || (!playerHit && !dealerHit))
                     {
-                        winnerMessage = new Message(DealerWins, messageFont, winnerMessageLocation);
+                        dealerHand[0].FlipOver();
+                        dealerScoreMessage = new Message(ScoreMessagePrefix + GetBlockjuckScore(dealerHand).ToString(),
+                        messageFont,
+                        new Vector2(TopCardOffset + HorizontalMessageOffset + HorizontalMenuButtonOffset, ScoreMessageTopOffset));
+                        messages.Add(dealerScoreMessage);
+                        menuButtons.Clear();
+                        menuButtons.Add(new MenuButton(quitButtonSprite, new Vector2(HorizontalMenuButtonOffset, TopMenuButtonOffset + (3 * VerticalMenuButtonSpacing)), GameState.Exiting));
+                        if (GetBlockjuckScore(playerHand) > MaxHandValue && GetBlockjuckScore(dealerHand) > MaxHandValue)
+                            winnerMessage = new Message(TIE, messageFont, winnerMessageLocation);
+                        else if (GetBlockjuckScore(playerHand) <= MaxHandValue && GetBlockjuckScore(dealerHand) <= MaxHandValue)
+                        {
+                            if (GetBlockjuckScore(playerHand) == GetBlockjuckScore(dealerHand))
+                            {
+                                winnerMessage = new Message(TIE, messageFont, winnerMessageLocation);
+                            }
+                            else if (GetBlockjuckScore(playerHand) > GetBlockjuckScore(dealerHand))
+                            {
+                                winnerMessage = new Message(PlayerWins, messageFont, winnerMessageLocation);
+                            }
+                            else
+                            {
+                                winnerMessage = new Message(DealerWins, messageFont, winnerMessageLocation);
+                            }
+                        }
+                        else if (GetBlockjuckScore(playerHand) > MaxHandValue)
+                            winnerMessage = new Message(DealerWins, messageFont, winnerMessageLocation);
+                        else if (GetBlockjuckScore(dealerHand) > MaxHandValue)
+                            winnerMessage = new Message(PlayerWins, messageFont, winnerMessageLocation);
+                        messages.Add(winnerMessage);
+                        currentState = GameState.DisplayingHandResults;
                     }
-                    dealerHand[0].FlipOver();
-                    GetBlockjuckScore(playerHand);
-                    currentState = GameState.WaitingForPlayer;
+                    else
+                    {
+                        currentState = GameState.WaitingForPlayer;
+                        playerHit = false;
+                        dealerHit = false;
+                    }
                     break;
                 case GameState.PlayerHitting:
                     int playerHandSize = playerHand.Count;
