@@ -170,6 +170,7 @@ namespace ProgrammingAssignment6
                 Exit();
 
             MouseState mouse = Mouse.GetState();
+
             // update menu buttons as appropriate
             foreach (MenuButton menuButton in menuButtons)
             {
