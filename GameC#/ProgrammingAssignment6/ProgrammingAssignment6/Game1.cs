@@ -226,7 +226,7 @@ namespace ProgrammingAssignment6
                     int playerHandSize = playerHand.Count;
                     Card playerCard = deck.TakeTopCard();
                     playerCard.X = TopCardOffset;
-                    playerCard.Y = TopCardOffset + (playerHandSize + VerticalCardSpacing);
+                    playerCard.Y = TopCardOffset + (playerHandSize * VerticalCardSpacing);
                     playerCard.FlipOver();
                     playerHand.Add(playerCard);
                     playerScoreMessage = new Message(PlayerScoreMessagePrefix + GetBlockjuckScore(playerHand).ToString(),
