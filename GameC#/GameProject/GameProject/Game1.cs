@@ -183,7 +183,7 @@ namespace GameProject
                 if (bear.Active && bear.CollisionRectangle.Intersects(
                     burger.CollisionRectangle))
                 {
-                    burger.Health =  GameConstants.BearDamage;
+                    burger.Health = burger.Health - GameConstants.BearDamage;
                     bear.Active = false;
                     explosions.Add(new Explosion(explosionSpriteStrip,
                         bear.Location.X, bear.Location.Y));
