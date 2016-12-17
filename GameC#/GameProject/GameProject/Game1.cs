@@ -324,6 +324,15 @@ namespace GameProject
                 null, null);
 
             // make sure we don't spawn into a collision
+            List<Rectangle> collisionRectangle = GetCollisionRectangles();
+            while (CollisionUtils.IsCollisionFree(newBear.CollisionRectangle, collisionRectangle))
+            {
+                newBear.X = GetRandomLocation(GameConstants.SpawnBorderSize, 
+                    graphics.PreferredBackBufferWidth - 2 * GameConstants.SpawnBorderSize);
+                newBear.Y = GetRandomLocation(GameConstants.SpawnBorderSize, 
+                    graphics.PreferredBackBufferHeight - 2 * GameConstants.SpawnBorderSize);
+
+            }
 
             // add new bear to list
             bears.Add(newBear);
