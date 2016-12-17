@@ -206,6 +206,11 @@ namespace GameProject
                     bears.RemoveAt(i);
                 }
             }
+            // adding new teddy bears
+            while (GameConstants.MaxBears > bears.Count)
+            {
+                SpawnBear();
+            }
             // clean out inactive projectiles
             for (int i = projectiles.Count - 1; i >= 0; i--)
             {
